@@ -1,0 +1,10 @@
+# This ConfigMap will control the deployment of new features in your application. 
+# When the feature toggle is set to true,
+# that new feature will be enabled in your web app the next time the Jenkins pipeline builds.
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: feature-toggle
+  namespace: svillalon
+data:
+  LOCATION_FEATURE_ENABLED: "False"
