@@ -1,6 +1,7 @@
 from flask import session
 from math import floor
 
+#
 
 def get_cart_weight(cart):
     """calculate weight of cart"""
